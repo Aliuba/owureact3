@@ -1,8 +1,11 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 
 const Comment = ({comment}) => {
     const{ postId, id, name, email, body}=comment
+
+
+
     return (
         <div>
             <div> postId: {postId}</div>
@@ -11,9 +14,9 @@ const Comment = ({comment}) => {
             <div> email: {email}</div>
             <div> body: {body}</div>
 
-            {/*тут я просто відправила на те посилання, що ми робили на лекції, чи треба якось інакше?*/}
+            <Link to={postId.toString()}>post which includes this comment</Link>
+            <br/>
 
-            <Link to={`../posts/${postId}`}>при натисканні на комментар тягнеться пост, до якого належить цей коментар</Link>
         </div>
     );
 };
