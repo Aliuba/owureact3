@@ -25,7 +25,6 @@ const App = () => {
                     <Route path={'albums'} element={<AlbumsPage/>}/>
 
                     <Route path={'comments'} element={<CommentsPage/>}>
-                        <Route path={'../posts/:postId'} element={<CommentsDetailsPage/>}/>
                         <Route path={':postId'} element={<CommentsDetailsPage/>}/>
                     </Route>
 
