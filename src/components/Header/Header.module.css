@@ -1,0 +1,17 @@
+.Header{
+    min-font-size: 50px;
+    background-color: #ab8989;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: #231e1e;
+    margin: 8px;
+}
+a:hover{
+    transform: scale(120%);
+}
